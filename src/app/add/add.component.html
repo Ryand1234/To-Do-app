@@ -1,1 +1,25 @@
-<p>add works!</p>
+
+
+<div class="field">
+  <label class="label">Task</label>
+  <div class="control">
+    <textarea [(ngModel)]="task" class="textarea" placeholder="Task"></textarea>
+  </div>
+</div>
+
+<div class="field">
+  <label class="label">Date</label>
+  <div class="control">
+    <input class="input" [(ngModel)]="date" type="text" placeholder="Text input">
+  </div>
+</div>
+
+
+<div class="field is-grouped">
+  <div class="control">
+    <button class="button is-link" (click)="add()">Submit</button>
+  </div>
+  <div class="control">
+    <button routerLink="/" class="button is-link is-light">Cancel</button>
+  </div>
+</div>

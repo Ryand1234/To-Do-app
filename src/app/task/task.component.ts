@@ -26,11 +26,12 @@ interface Itask{
 export class TaskComponent implements OnInit {
 
 
-	tasks: Array<Itask> = [
-	{name: "Wake up", status: true, time: "14*02*2001"},
-	{name: "Take A Bath", status: true, time: "14-02-2001"},
-	{name: "Join Online Classes", status: true, time: "14-02-2001"}
-	]
+  /*{name: "Wake up", status: true, time: "14*02*2001"},
+  {name: "Take A Bath", status: true, time: "14-02-2001"},
+  {name: "Join Online Classes", status: true, time: "14-02-2001"}
+  */
+
+	tasks: Array<Itask> = []
   	
   	private query: QueryRef<any>;
 
@@ -38,11 +39,11 @@ export class TaskComponent implements OnInit {
 
 
   	ngOnInit(): void {
-  		/*this.query = this.apollo.watchQuery({query: GET_TASK});
+  		this.query = this.apollo.watchQuery({query: GET_TASK});
 
   		this.query.valueChanges.subscribe(result =>{
   			this.tasks = result.data.querytask;
-  		})*/
+  		})
   	}
 
   	complete(){

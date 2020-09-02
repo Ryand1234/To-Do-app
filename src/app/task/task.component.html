@@ -1,5 +1,6 @@
 <div *ngFor="let task of tasks">
-	<div *ngIf=(task.name) class="card">
+	<div *ngIf=(task.time)>
+  <div *ngIf=(task.name) class="card">
   	<header class="card-header">
     	<p class="card-header-title">
       	{{task.name}}
@@ -20,5 +21,6 @@
     <a  class="card-footer-item">To Do</a>
     <a  class="card-footer-item">Delete</a>
   </footer>
+</div>
 </div>
 </div>
