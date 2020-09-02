@@ -10,6 +10,10 @@
 # dependencies
 /node_modules
 
+
+#graphQL Module
+src/app/graphql.module.ts
+
 # profiling files
 chrome-profiler-events*.json
 speed-measure-plugin*.json
